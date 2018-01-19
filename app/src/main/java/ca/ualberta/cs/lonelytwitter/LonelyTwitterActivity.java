@@ -53,7 +53,13 @@ public class LonelyTwitterActivity extends Activity {
 				alltweets.add(imptweet);
 				alltweets.add(normtweet);
 
+				HappyMood newmood = new HappyMood(text);
 
+				HappyMood newmood = new HappyMood("I feel great");
+
+				// list for storing all moods
+				ArrayList<CurrentMood> allmoods = new ArrayList<CurrentMood>();
+				allmoods.add(newmood);
 
 
 				try{
