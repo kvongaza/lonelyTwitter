@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
 =======
 >>>>>>> master
+=======
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+>>>>>>> dead7e8b73aef876d795087b304d37f3d6e64a7d
       <module fileurl="file://$PROJECT_DIR$/lonelyTwitter.iml" filepath="$PROJECT_DIR$/lonelyTwitter.iml" />
     </modules>
   </component>

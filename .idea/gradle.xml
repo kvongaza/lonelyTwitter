@@ -6,14 +6,20 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dead7e8b73aef876d795087b304d37f3d6e64a7d
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+>>>>>>> dead7e8b73aef876d795087b304d37f3d6e64a7d
         <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>

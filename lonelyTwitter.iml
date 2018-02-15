@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <module external.linked.project.id="lonelyTwitter" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
 =======
 <module external.system.id="GRADLE" type="JAVA_MODULE" version="4">
 >>>>>>> master
+=======
+<module external.linked.project.id="lonelyTwitter" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+>>>>>>> dead7e8b73aef876d795087b304d37f3d6e64a7d
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
@@ -17,9 +21,12 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
     </content>
+<<<<<<< HEAD
 =======
     <content url="file://$MODULE_DIR$" />
 >>>>>>> master
+=======
+>>>>>>> dead7e8b73aef876d795087b304d37f3d6e64a7d
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
