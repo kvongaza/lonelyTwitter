@@ -4,6 +4,7 @@ import android.test.ActivityInstrumentationTestCase2;
 
 /**
  * Created by watts1 on 1/28/16.
+ *  * Edited by kvongaza on 16/02/18
  */
 public class TweetListTest extends ActivityInstrumentationTestCase2 {
     public TweetListTest(){
@@ -11,7 +12,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
     }
 
 
-    public void testAddTweet(){
+    public void testAddTweet() throws IllegalAccessException {
         TweetList tweets = new TweetList();
         Tweet tweet = new NormalTweet("Test Tweet");
 
@@ -19,7 +20,7 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         assertTrue(tweets.hasTweet(tweet));
     }
 
-    public void testHasTweet(){
+    public void testHasTweet() throws IllegalAccessException {
         TweetList tweets = new TweetList();
         Tweet tweet = new NormalTweet("Another Test Tweet");
 
@@ -28,18 +29,23 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         assertTrue(tweets.hasTweet(tweet));
     }
 
-    public void testGetTweet(){
+    public void testGetTweet() throws IllegalAccessException {
         TweetList tweets = new TweetList();
-        Tweet tweet = new NormalTweet("Another Test Tweet");
+        Tweet t1 = new NormalTweet("t1 Tweet");
+        Tweet t2 = new NormalTweet("t2 Tweet");
 
-        tweets.add(tweet);
+        tweets.add(t1);
         Tweet returnedTweet = tweets.getTweet(0);
 
-        assertEquals(returnedTweet.getMessage(), tweet.getMessage());
-        assertEquals(returnedTweet.getDate(), tweet.getDate());
+        tweets.add(t2);
+
+        assertEquals(returnedTweet.getMessage(), t1.getMessage());
+        assertEquals(returnedTweet.getDate(), t1.getDate());
+        assertEquals(returnedTweet.getMessage(), t2.getMessage());
+        assertEquals(returnedTweet.getDate(), t2.getDate());
     }
 
-    public void testDeleteTweet(){
+    public void testDeleteTweet() throws IllegalAccessException {
         TweetList tweets = new TweetList();
         Tweet tweet = new NormalTweet("Another Test Tweet");
 
@@ -49,5 +55,12 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
         assertFalse(tweets.hasTweet(tweet));
     }
 
+    public void testGetCount() throws IllegalAccessException {
+        TweetList tweets = new TweetList();
+        Tweet tweet = new NormalTweet("Test tweet for count");
+        tweets.add(tweet);
+        int tweetCount = tweets.getCount();
+        assertEquals(1, tweetCount);
+    }
 
 }
